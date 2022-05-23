@@ -1,0 +1,11 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        //noinspection JcenterRepositoryObsolete
+        jcenter() // Warning: this repository is going to shut down soon // get older version of 'com.tuya.smart:tuyasmart:3.20.0'
+    }
+}
+rootProject.name = "CPSmartLightDemo"
+include ':app'

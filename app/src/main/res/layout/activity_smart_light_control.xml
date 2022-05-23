@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.control.SmartLightControlActivity">
+
+    <TextView
+        android:id="@+id/device_name_caption"
+        style="@style/OverlineText.SectionCaptionText.WithoutMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/device_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textColor="?attr/colorSecondaryVariant"
+        app:layout_constraintStart_toStartOf="@+id/device_name_caption"
+        app:layout_constraintTop_toBottomOf="@+id/device_name_caption"
+        tools:text="Device Name" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/power_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/power_button"
+        android:src="@drawable/ic_power_settings_new_48"
+        app:backgroundTint="@color/power_button_selector"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/device_name_caption" />
+
+    <TextView
+        android:id="@+id/set_work_mode_caption"
+        style="@style/OverlineText.SectionCaptionText.WithoutMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_large"
+        android:text="@string/set_work_mode"
+        app:layout_constraintStart_toStartOf="@+id/device_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/device_name_text" />
+
+    <Spinner
+        android:id="@+id/work_mode_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_margin"
+        app:layout_constraintEnd_toStartOf="@+id/scene_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_work_mode_caption" />
+
+    <Spinner
+        android:id="@+id/scene_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/work_mode_spinner"
+        app:layout_constraintTop_toTopOf="@+id/work_mode_spinner" />
+
+    <TextView
+        style="@style/OverlineText.SectionCaptionText.WithoutMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_scene"
+        app:layout_constraintBottom_toTopOf="@+id/scene_spinner"
+        app:layout_constraintStart_toStartOf="@+id/scene_spinner" />
+
+    <TextView
+        style="@style/OverlineText.SectionCaptionText.WithoutMargin"
+        android:id="@+id/adjust_brightness_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_large"
+        android:text="@string/adjust_brightness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_spinner" />
+
+    <SeekBar
+        android:id="@+id/brightness_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:min="0"
+        android:max="100"
+        android:progressTint="@color/grey_900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adjust_brightness_caption"
+        tools:progress="50"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        style="@style/OverlineText.SectionCaptionText.WithoutMargin"
+        android:id="@+id/adjust_colour_temperature_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_large"
+        android:text="@string/adjust_colour_temperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brightness_seekbar" />
+
+    <SeekBar
+        android:id="@+id/colour_temperature_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:max="100"
+        android:min="0"
+        android:progressTint="@color/grey_900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adjust_colour_temperature_caption"
+        tools:ignore="UnusedAttribute"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/color_caption"
+        style="@style/OverlineText.SectionCaptionText.WithoutMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_large"
+        android:text="@string/color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colour_temperature_seekbar" />
+
+    <my.com.codeplay.smartlightdemo.view.ColorPickerView
+        android:id="@+id/color_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        app:defaultColor="@color/white"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_caption"
+        app:showPickedColorInCenter="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

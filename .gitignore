@@ -1,0 +1,81 @@
+# IntelliJ
+# For Gradle or Maven based projects, these files will be generated on import
+*.iml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/dictionaries
+.idea/libraries
+# these files or directories store user-specific settings
+.idea/caches
+.idea/compiler.xml
+.idea/deploymentTargetDropDown.xml
+.idea/misc.xml
+.idea/shelf
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/workspace.xml
+# .name consists of the project name displayed on the title bar of Android Studio
+.idea/.name
+# navEditor.xml stores the x/y positions of visual elements in the Navigation Resource editor,
+.idea/navEditor.xml
+# assetWizardSettings.xml stores the last state of the image asset wizard
+# (e.g. the icon which was last being added)
+.idea/assetWizardSettings.xml
+
+# Markdown navigator plugin
+.idea/markdown-navigator.xml
+.idea/markdown-navigator-enh.xml
+
+# Gradle files
+.gradle
+/build
+/engine-release/build
+
+# Generated files
+bin/
+gen/
+out/
+
+# Local configuration file (sdk path, etc)
+/local.properties
+local.properties
+
+# Android Studio captures folder
+/captures
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+.cxx
+
+# Built application files and folders
+*.apk
+*.ap_
+*.aab
+
+# Keystore files
+*.jks
+*.keystore
+
+# Log Files
+*.log
+
+# Version control
+vcs.xml
+
+# Google Services (e.g. APIs or Firebase)
+# google-services.json
+
+# OS specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Misc. files
+docs/Manual- Local Maven Repository Setup for dtsbSelfieXLib.pages
+docs/font/lato.zip
+keystore.properties
+
+
+
+

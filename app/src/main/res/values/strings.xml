@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">CPSmartLightDemo</string>
+    <string name="title_activity_login">Smart Light Control\u0020</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Repeat Password</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid_password">Password must be >6 characters</string>
+    <string name="invalid_validation_code">Invalid validation code</string>
+    <string name="password_not_match">Passwords not match</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="get_validation_code_failed">Failed to get validation code</string>
+    <string name="login_failed">Login failed</string>
+    <string name="version">Version %s</string>
+    <string name="powered_by_codeplay_studio">Powered by CodePlay Studio</string>
+
+    <string name="title_activity_main">"Welcome, %s!"</string>
+    <string name="my_home">My Home</string>
+    <string name="devices">Devices</string>
+    <string name="add_device">Add Device</string>
+    <string name="add_device_failed">Add device failed</string>
+    <string name="no_smart_light_added">No smart light added</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="code">6 Digits Code</string>
+    <string name="email_validation_desc">A validation code has been sent to your email. Enter the code to confirm your email:</string>
+    <string name="account_created">Account created. Enter your email and password to login.</string>
+    <string name="add_network_desc">The network the device to be connected with:</string>
+    <string name="network_name">Network\'s Name (SSID)</string>
+    <string name="invalid_network_name">Network\'s name cannot be empty</string>
+    <string name="invalid_network_password">Password cannot be empty</string>
+    <string name="find_device">find device…</string>
+    <string name="find_device_failed">Unable to find device</string>
+    <string name="get_token_failed">Failed to get device token</string>
+    <string name="pair_device">pair device…</string>
+    <string name="activate_failed">Failed to activate device</string>
+    <string name="save_device_failed">Failed to save device</string>
+
+    <string name="device_offline">Device is offline</string>
+    <string name="device_name">Device Name</string>
+    <string name="power_button">Power button</string>
+    <string name="set_scene">Set Scene</string>
+    <string name="set_work_mode">Set Work Mode</string>
+    <string name="adjust_brightness">Adjust Brightness</string>
+    <string name="operation_failed">Operation failed</string>
+    <string name="adjust_colour_temperature">Adjust Colour Temperature</string>
+    <string name="color">Color</string>
+    <string name="try_again">Try Again</string>
+    <string name="remove_this_device">Remove this device?</string>
+    <string name="get_device_token">Getting device token…</string>
+</resources>

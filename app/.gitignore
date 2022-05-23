@@ -1,0 +1,4 @@
+/build
+# ignore private configurations and files for Tuya SDK integration
+/src/main/assets/t_s.bmp
+/src/main/res/values/configs.xml
